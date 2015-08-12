@@ -566,9 +566,9 @@ object IO3 {
   import java.nio._
   import java.nio.channels._
 
-  def read(file: AsynchronousFileChannel,
-           fromPosition: Long,
-           numBytes: Int): Par[Either[Throwable, Array[Byte]]] = ???
+//  def read(file: AsynchronousFileChannel,
+//           fromPosition: Long,
+//           numBytes: Int): Par[Either[Throwable, Array[Byte]]] = ???
 
   // Provides the syntax `Async { k => ... }` for asyncronous IO blocks.
   def Async[A](cb: (A => Unit) => Unit): IO[A] =
